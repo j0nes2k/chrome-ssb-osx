@@ -66,7 +66,7 @@ fi
 #!/bin/sh
 ABSPATH=\$(cd "\$(dirname "\$0")"; pwd)
 /bin/cp "\$ABSPATH/Chrome" "\$ABSPATH/$name Chrome"
-exec "\$ABSPATH/$name Chrome" --app="$url" --user-data-dir="\$ABSPATH/../Profile" "\$@"
+exec "\$ABSPATH/$name Chrome" --user-data-dir="\$ABSPATH/../Profile" "\$@"
 EOF
 /bin/chmod +x "$execPath/$name"
 
